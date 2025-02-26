@@ -12,11 +12,11 @@ int main() {
     float valor01_carta01, valor01_carta02, valor02_carta01, valor02_carta02, soma01, soma02;
 
 // Primeira carta...
-    printf("Digite o estado da primeira cidade: ");
+    printf("Digite o estado da primeira cidade:\n");
     scanf("%s", estado01);
-    printf("Digite o código da primeira carta: ");
+    printf("Digite o código da primeira carta:\n");
     scanf("%s", codigo01);
-    printf("Digite o nome da primeira cidade: ");
+    printf("Digite o nome da primeira cidade:\n");
     scanf("%s", cidade01);
     printf("Digite a população, área, PIB e pontos turísticos da primeira cidade:\n");
     scanf("%lu %f %f %d", &populacao01, &area01, &pib01, &pontostur01);
@@ -24,9 +24,9 @@ int main() {
 // Segunda carta...
     printf("Digite o estado da segunda cidade:\n");
     scanf("%s", estado02);
-    printf("Digite o código da segunda carta: ");
+    printf("Digite o código da segunda carta:\n");
     scanf("%s", codigo02);
-    printf("Digite o nome da segunda cidade: ");
+    printf("Digite o nome da segunda cidade:\n");
     scanf("%s", cidade02);
     printf("Digite a população, área, PIB e pontos turísticos da segunda cidade:\n");
     scanf("%lu %f %f %d", &populacao02, &area02, &pib02, &pontostur02);
