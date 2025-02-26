@@ -69,14 +69,14 @@ if (escolha01 == 1) {
     valor01_carta01 = populacao01;
     valor01_carta02 = populacao02;
 } else if (escolha01 == 2) {
-    valor01_carta01 = area1;
+    valor01_carta01 = area01;
     valor01_carta02 = area02;
 } else if (escolha01 == 3) {
     valor01_carta01 = pib01;
     valor01_carta02 = pib02;
 } else if (escolha01 == 4) {
-    valor1_carta01 = pontos01;
-    valor1_carta02 = pontos02;
+    valor01_carta01 = pontostur01;
+    valor01_carta02 = pontostur02;
 } else {
     valor01_carta01 = densidade01;
     valor01_carta02 = densidade02;
