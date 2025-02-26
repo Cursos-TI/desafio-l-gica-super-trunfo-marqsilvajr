@@ -11,7 +11,7 @@ int main() {
     int escolha01 = 0, escolha02 = 0;
     float valor01_carta01, valor01_carta02, valor02_carta01, valor02_carta02, soma01, soma02;
 
-    // Primeira carta...
+// Primeira carta...
     printf("Digite o estado da primeira cidade: ");
     scanf("%s", estado01);
     printf("Digite o código da primeira carta: ");
@@ -21,7 +21,7 @@ int main() {
     printf("Digite a população, área, PIB e pontos turísticos da primeira cidade:\n");
     scanf("%lu %f %f %d", &populacao01, &area01, &pib01, &pontostur01);
 
-    // Segunda carta...
+// Segunda carta...
     printf("Digite o estado da segunda cidade:\n");
     scanf("%s", estado02);
     printf("Digite o código da segunda carta: ");
@@ -31,35 +31,35 @@ int main() {
     printf("Digite a população, área, PIB e pontos turísticos da segunda cidade:\n");
     scanf("%lu %f %f %d", &populacao02, &area02, &pib02, &pontostur02);
 
-    // Densidade Populacional...
+// Densidade Populacional...
     densidade01 = populacao01 / area01;
     densidade02 = populacao02 / area02;
 
-    // Informação cadastradas...
+// Informação cadastradas...
     printf("\n### Informações das Cartas ###\n");
     printf("Carta 1 - %s (%s) | População: %lu | Área: %.2f | PIB: %.2f | Pontos Turísticos: %d | Densidade: %.2f\n",
            cidade01, estado01, populacao01, area01, pib01, pontostur01, densidade01);
     printf("Carta 2 - %s (%s) | População: %lu | Área: %.2f | PIB: %.2f | Pontos Turísticos: %d | Densidade: %.2f\n",
            cidade02, estado02, populacao02, area02, pib02, pontostur02, densidade02);
 
-   // Menu escolhendo o primeiro atributo...
+// Menu escolhendo o primeiro atributo...
    printf("\nEscolha o primeiro atributo para comparar:\n");
    printf("1 - População\n2 - Área\n3 - PIB\n4 - Pontos Turísticos\n5 - Densidade Populacional\n");
    printf("Digite sua escolha: ");
    scanf("%d", &escolha01);
 
-   // Verificando a escolha01...
+// Verificando a escolha01...
    if (escolha01 < 1 || escolha01 > 5) {
        printf("Opção inválida! O programa será reiniciado.\n");
        return 1;
    }
 
-   // Menu escolhendo o segundo atributo...
+// Menu escolhendo o segundo atributo...
    printf("\nEscolha o segundo atributo diferente para comparar:\n");
    printf("Digite sua escolha: ");
    scanf("%d", &escolha02);
 
-   // Verificando a escolha02...
+// Verificando a escolha02...
    if (escolha02 < 1 || escolha02 > 5 || escolha02 == escolha01) {
        printf("Opção inválida! O programa será encerrado.\n");
        return 1;
@@ -103,7 +103,7 @@ if (escolha02 == 1) {
 soma01 = valor01_carta01 + valor02_carta01;
 soma02 = valor01_carta02 + valor02_carta02;
 
-   // Comparação da escolha do usuário...
+// Comparação da escolha do usuário...
     printf("\n### Comparação de Cartas ###\n");
 
     printf("Atributos 1: %d - Carta 1: %.2f | Carta 2: %.2f\n", escolha01, valor01_carta01, valor01_carta02);
